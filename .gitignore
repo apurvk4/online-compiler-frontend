@@ -7,3 +7,5 @@ coverage/
 .cache/
 *.mdb
 start.sh
+.env
+.parcel-cache

@@ -21,7 +21,7 @@ function App() {
     editorRef.current.setValue("");
   }
   function sendData() {
-    fetch("http://techathon121.herokuapp.com/code", {
+    fetch(process.env.REACT_APP_FETCHURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
