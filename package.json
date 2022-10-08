@@ -5,8 +5,7 @@
   "scripts": {
     "clear": "rm -rf dist .parcel-cache/ ",
     "dev": "parcel public/index.html",
-    "build": "rm -rf dist && NODE_ENV=production parcel build public/index.html --public-url ./",
-    "heroku-postbuild": "parcel build src/index.html"
+    "build": "parcel build public/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
