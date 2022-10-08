@@ -5,7 +5,8 @@
   "scripts": {
     "clear": "rm -rf dist .parcel-cache/ ",
     "dev": "parcel public/index.html",
-    "build": "rm -rf dist && NODE_ENV=production parcel build public/index.html --public-url ./"
+    "build": "rm -rf dist && NODE_ENV=production parcel build public/index.html --public-url ./",
+    "heroku-postbuild": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
@@ -37,7 +38,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
-    "react-split": "^2.0.14"
+    "react-split": "^2.0.14",
+    "parcel": "^2.7.0"
   },
   "browserslist": [
     ">0.2%",
