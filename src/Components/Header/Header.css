@@ -1,0 +1,58 @@
+@import "../../global.css";
+
+.editor-header{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border:1px solid rgba(0,0,0,0.125);
+}
+.file-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border:1px solid rgba(0,0,0,0.125);
+    border-bottom:0px ;
+}
+.file-name.dark{
+    border: 1px solid rgb(52,56,58);
+    border-bottom: 0px;
+}
+.editor-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:189px;
+    margin-right:-6px;
+}
+.darkmode{
+    margin-right: 20px;
+}
+.run{
+    background-color: blue;
+    min-width: 67px;
+    height: 32px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.themebutton {
+    border-radius: 20px;
+  }
+   .themebutton.dark-mode {
+   background-color: black;
+   border-color: #141414;
+  }
+  .themebutton.light-mode {
+    background-color: white;
+    border: 1px solid #c6c6c6;
+  }
+  .themebutton:focus {
+    outline: none;
+  }

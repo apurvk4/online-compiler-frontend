@@ -1,0 +1,20 @@
+@import "../../global.css";
+
+.output{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+.output-result,.output-inp{
+    display: flex;
+    border:1px solid rgba(0,0,0,0.125);
+    height: 50vh;
+}
+@media screen and (min-width: 800px) {
+    .output{
+        width: 50%;
+    }
+    /* .output-result,.output-inp{
+    } */
+}

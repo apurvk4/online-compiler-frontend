@@ -1,0 +1,19 @@
+@import "../../global.css";
+.editor{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+.text-editor{
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (min-width: 800px) {
+    .editor{
+        width: 50%;
+    }
+    .text-editor{
+        width: 50%;
+    }
+}
