@@ -6,7 +6,8 @@
       "source": "/(.*)",
       "headers": [
         {
-          "key": "x-robots-tag"
+          "key": "x-robots-tag",
+          "value": null
         }
       ]
     }
