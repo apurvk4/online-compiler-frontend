@@ -6,8 +6,8 @@
     "clear": "rm -rf dist .parcel-cache/ ",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url ./ --dist-dir public",
-    "postbuild": "echo 'user-agent: *' > public/robots.txt",
-    "postpostbuild": "echo 'Allow : / '  >> public/robots.txt"
+    "prebuild": "echo 'user-agent: *' > public/robots.txt",
+    "postbuild": "echo 'Allow : / '  >> public/robots.txt"
   },
   "keywords": [],
   "author": "",
