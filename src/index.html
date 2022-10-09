@@ -20,21 +20,21 @@
             background-color: black;
             opacity: 0.9;
         }
-    
+
         #preload.hide {
             display: none;
         }
-    
+
         .loader-spinner {
             width: 150px;
             height: 150px;
         }
-    
+
         .loader-spinner svg {
             width: 90%;
             fill: none;
         }
-    
+
         .load {
             transform-origin: 50% 50%;
             stroke-dasharray: 0.7 0.3;
@@ -42,20 +42,20 @@
             stroke-width: 3px;
             stroke: #ff5bff;
         }
-    
+
         .load.one {
             animation: load 1.5s infinite ease-in;
             animation-direction: reverse;
         }
-    
+
         .load.two {
             fill: #ff5bff;
         }
-    
+
         .load.three {
             animation: load 1.5s infinite;
         }
-    
+
         @keyframes load {
             100% {
                 transform: rotate(360deg);
@@ -76,7 +76,7 @@
             </svg>
         </div>
     </div>
-    <script type="module" src="/src/index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
 </body>
 
 </html>
