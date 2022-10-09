@@ -67,7 +67,6 @@ function Navbar(props) {
                 selected={language == item}
                 onClick={(e) => {
                   setLanguage(e.target.getAttribute("value"));
-                  console.log(e.target.getAttribute("value"));
                 }}
                 value={item}
                 sx={{ textAlign: "center" }}
