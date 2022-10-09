@@ -34,10 +34,12 @@ const codeEditor = (props) => {
     return v;
   }
   async function getResult() {
+    if (language == "java") {
+      alert("donot change the name of the class otherwise it may not work.");
+    }
     setOutput(null);
     updateLoading(true);
-    console.log(code);
-    const res = await solution(language, code, input);
+    const res = await solution(language, code[language], input);
     updateLoading(false);
     setOutput(res);
     // .then((res) => res.json())

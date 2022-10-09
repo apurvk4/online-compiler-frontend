@@ -26,28 +26,40 @@ const Sidebar = () => {
       >
         <Tooltip value="cpp" title="C++">
           <Link to="/cpp">
-            <ToggleButton value="cpp" aria-label="cpp">
+            <ToggleButton
+              value="cpp"
+              aria-label="cpp"
+              selected={language == "cpp"}
+            >
               <Cpp />
             </ToggleButton>
           </Link>
         </Tooltip>
         <Tooltip value="c" title="C">
           <Link to="/c">
-            <ToggleButton value="c" aria-label="c">
+            <ToggleButton value="c" aria-label="c" selected={language == "c"}>
               <C />
             </ToggleButton>
           </Link>
         </Tooltip>
         <Tooltip value="python3" title="python3">
           <Link to="/python3">
-            <ToggleButton value="python3" aria-label="python3">
+            <ToggleButton
+              value="python3"
+              aria-label="python3"
+              selected={language == "python3"}
+            >
               <Python />
             </ToggleButton>
           </Link>
         </Tooltip>
         <Tooltip value="java" title="java">
           <Link to="/java">
-            <ToggleButton value="java" aria-label="java">
+            <ToggleButton
+              value="java"
+              aria-label="java"
+              selected={language == "java"}
+            >
               <Java />
             </ToggleButton>
           </Link>

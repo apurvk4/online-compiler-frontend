@@ -19,7 +19,7 @@ const Header = (props) => {
   async function handleClick() {
     updateLoading(true);
     setOutput(null);
-    const res = await solution(language, code, input);
+    const res = await solution(language, code[language], input);
     updateLoading(false);
     setOutput(res);
   }

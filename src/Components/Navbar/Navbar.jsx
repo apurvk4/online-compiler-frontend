@@ -20,7 +20,14 @@ import LangContext from "../../contexts/langContext";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/material";
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = [
+  { value: "Home", url: "/" },
+  { value: "About", url: "https://github.com/apurvk4" },
+  {
+    value: "Contact",
+    url: "https://github.com/apurvk4/online-compiler-frontend",
+  },
+];
 const drawerItems = ["cpp", "c", "python3", "java"];
 const StyledLink = styled(Link)(({ theme }) => ({
   width: "100%",
@@ -57,6 +64,7 @@ function Navbar(props) {
           <ListItem key={item} disablePadding>
             <StyledLink to={"/" + item}>
               <ListItemButton
+                selected={language == item}
                 onClick={(e) => {
                   setLanguage(e.target.getAttribute("value"));
                   console.log(e.target.getAttribute("value"));
@@ -101,8 +109,8 @@ function Navbar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+              <Button key={item.value} sx={{ color: "#fff" }} href={item.url}>
+                {item.value}
               </Button>
             ))}
           </Box>
