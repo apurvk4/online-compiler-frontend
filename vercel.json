@@ -1,9 +1,6 @@
 {
   "rewrites": [
-    { "source": "/c", "destination": "/" },
-    { "source": "/cpp", "destination": "/" },
-    { "source": "/python3", "destination": "/" },
-    { "source": "/java", "destination": "/" }
+    { "source": "/(.*)", "destination": "/" }
   ],
   "outputDirectory": "public"
 }
