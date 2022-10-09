@@ -7,7 +7,7 @@
       "headers": [
         {
           "key": "x-robots-tag",
-          "value": null
+          "value": "undefined"
         }
       ]
     }
