@@ -9,10 +9,12 @@ const Output = () => {
   const styleLight = {
     backgroundColor: "#fff",
     color: "#000",
+    borderBottom: "1px solid rgba(0,0,0,0.125)",
   };
   const styleDark = {
     backgroundColor: "#000",
     color: "#fff",
+    borderBottom: "1px solid rgb(52,56,58)",
   };
   return (
     <div className="output">
@@ -20,6 +22,7 @@ const Output = () => {
         disabled
         placeholder="output"
         className="output-result"
+        style={theme.palette.mode == "light" ? styleLight : styleDark}
         value={output == null ? "" : output.result}
         readOnly={true}
       />
@@ -27,7 +30,7 @@ const Output = () => {
         className="output-inp"
         placeholder="input"
         style={theme.palette.mode == "light" ? styleLight : styleDark}
-        value={input == null ? "" : value}
+        value={input == null ? "" : input}
         onChange={(e) => setInput(e.target.value)}
       />
     </div>
