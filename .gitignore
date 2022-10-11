@@ -9,3 +9,7 @@ coverage/
 start.sh
 .env
 .parcel-cache
+public/*.js
+public/*.css
+public/*.html
+public/*.map
