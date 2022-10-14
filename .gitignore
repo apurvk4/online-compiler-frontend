@@ -11,5 +11,4 @@ start.sh
 .parcel-cache
 public/*.js
 public/*.css
-public/*.html
 public/*.map
