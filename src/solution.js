@@ -2,7 +2,6 @@ const solution = async (language, code, input) => {
   let b = {
     language,
     code,
-    id: process.env.REACT_APP_UNIQUEID,
   };
   if (input) {
     b["input"] = input;
